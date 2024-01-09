@@ -26,7 +26,7 @@ export default function Home() {
                     <Image src="/ig.png" alt="hero" height="510" width="764"/>
                   </CardContent>
                 </Card>
-              </CarouselItem>s
+              </CarouselItem>
               <CarouselItem>
                 <Card style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                   <CardContent className='p-4'>

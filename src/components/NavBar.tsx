@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { Stack } from "@mui/material"
+import { Stack, Typography } from "@mui/material"
 import ThemeToggle from "./ThemeToggle"
  
 const components: { title: string; href: string; description: string }[] = [
@@ -30,44 +30,47 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ]
 
-const NavBar = () => {
+const NavBar = () => { //fix font for name
     return (
-        <Stack direction="row-reverse" spacing={2} py={2} pr={10}>
-            <ThemeToggle/>
-            <NavigationMenu>
-                <NavigationMenuList>
-                    <NavigationMenuItem>
-                        <NavigationMenuTrigger>Work</NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                        <ul className="grid w-[300px] gap-3 p-4 md:w-[350px] md:grid-cols-1 lg:w-[400px] ">
-                        {components.map((component) => (
-                                <ListItem
-                                key={component.title}
-                                title={component.title}
-                                href={component.href}
-                                >
-                                {component.description}
-                                </ListItem>
-                            ))}
-                        </ul>
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href="/about" legacyBehavior passHref>
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            About
-                            </NavigationMenuLink>
-                        </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href="/contact" legacyBehavior passHref>
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Contact Me
-                            </NavigationMenuLink>
-                        </Link>
-                    </NavigationMenuItem>
-                </NavigationMenuList>
-            </NavigationMenu>
+      <Stack direction="row" justifyContent="space-between" pt={4} px={10}>
+          <Typography variant="h6" fontWeight="bold" fontSize={25}>Prince Authoy Singha</Typography> 
+          <Stack direction="row-reverse" spacing={2}>
+              <ThemeToggle/>
+              <NavigationMenu>
+                  <NavigationMenuList>
+                      <NavigationMenuItem>
+                          <NavigationMenuTrigger>Work</NavigationMenuTrigger>
+                          <NavigationMenuContent>
+                          <ul className="grid w-[300px] gap-3 p-4 md:w-[350px] md:grid-cols-1 lg:w-[400px] ">
+                          {components.map((component) => (
+                                  <ListItem
+                                  key={component.title}
+                                  title={component.title}
+                                  href={component.href}
+                                  >
+                                  {component.description}
+                                  </ListItem>
+                              ))}
+                          </ul>
+                          </NavigationMenuContent>
+                      </NavigationMenuItem>
+                      <NavigationMenuItem>
+                          <Link href="/about" legacyBehavior passHref>
+                              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                              About
+                              </NavigationMenuLink>
+                          </Link>
+                      </NavigationMenuItem>
+                      <NavigationMenuItem>
+                          <Link href="/contact" legacyBehavior passHref>
+                              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                              Contact Me
+                              </NavigationMenuLink>
+                          </Link>
+                      </NavigationMenuItem>
+                  </NavigationMenuList>
+              </NavigationMenu>
+          </Stack>
         </Stack>
 
     )

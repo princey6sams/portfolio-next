@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Avatar, IconButton, Stack, Typography } from '@mui/material'
+import { Avatar, Container, IconButton, Stack, Typography } from '@mui/material'
 import CustomButton from '@/components/CustomButton'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -9,11 +9,39 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 export default function Home() {
   return (
     <main>
-      <Stack direction="column" spacing={4} alignItems="center" p={5}>
-        <Typography variant="h2" fontWeight="bold">Prince Authoy Singha</Typography>
-        <Image src="/ig.png" alt="hero" height="510" width="764"/>
+      <Stack direction="column" spacing={4} alignItems="center" p={10}>
+        <Stack direction="row" justifyContent="space-around" px={10} pb={4}>
+          <Container maxWidth="sm">
+            <Typography variant="h4" fontSize={20} pb={2}>Creativity</Typography>
+            {/* Specify colors for creativity for dark and light modes */}
+            <Typography variant="h4" fontWeight="bold" fontSize={45}>Passionate individal with a love for creativity.</Typography>
+          </Container>
+          <Container maxWidth="md">
+            <Typography variant="h6">Welcome to my portfolio website! I am a computer engineering student with a passion for photography. This website is where I showcase my unique blend of computer engineering and photography. Explore my work and projects to see how I bring creativity and technical expertise together.</Typography>
+            <Stack direction="row" spacing={4} pt={4}>
+              <CustomButton link="/about" name="Explore" variant="default" width="150px"/>
+              {/* How to make it scroll to another section of the same page */}
+              <CustomButton link="/contact" name="Contact" variant="outline" width="150px"/>
+            </Stack>
+          </Container>
+        </Stack>
+        <Image src="/ig.jpeg" alt="hero" height="1020" width="1528"/>
+        <Typography variant="h4" fontWeight="bold" fontSize={50}>My Work</Typography>
+        <Stack direction="row" justifyContent="space-around" pt={12} px={10}>
+          <Container maxWidth="md">
+            <Typography variant="h4" fontWeight="bold" fontSize={50}>Combining Computer Engineering and Photography for Impact.</Typography>
+          </Container>
+          <Container maxWidth="md">
+            <Typography variant="h6">Welcome to my portfolio website, where I showcase my unique blend of computer engineering and photography. Explore my work and projects to see how I bring creativity and technical expertise together.</Typography>
+            <Stack direction="row" spacing={4} pt={4}>
+              <CustomButton link="/about" name="Explore" variant="default" width="150px"/>
+              {/* How to make it scroll to another section of the same page */}
+              <CustomButton link="/contact" name="Contact" variant="outline" width="150px"/>
+            </Stack>
+          </Container>
+        </Stack>
         <Stack direction = "row" spacing={4} alignItems="center">
-            {/* // SSR used */}
+            {/* // SSR used for custom button */}
             <CustomButton link="/photography" name="Photography" variant="outline" width="150px"/> 
             <CustomButton link="/programming" name="Programming" variant="outline" width="150px"/>
         </Stack>
