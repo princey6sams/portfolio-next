@@ -10,7 +10,8 @@ const nextConfig = {
         //         pathname: 'image/upload/**',
         //     },
         // ],
-    }, 
+    },
+    origin: "export",
 }
 
 module.exports = nextConfig
