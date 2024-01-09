@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        formats: ['image/avif', 'image/webp'],
+        unoptimized: true,
+        // formats: ['image/avif', 'image/webp'],
         // remotePatterns: [
         //     {
         //         protocol: 'https',
@@ -11,7 +12,8 @@ const nextConfig = {
         //     },
         // ],
     },
-    origin: "export",
+    distDir: "dist",
+    output: "export",
 }
 
 module.exports = nextConfig
