@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailIcon from '@mui/icons-material/Mail';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import { replaceBase } from '@/utils/utils';
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
             </Stack>
           </Container>
         </Stack>
-        <Image src="/ig.jpeg" alt="hero" height="1020" width="1528"/>
+        <Image src={replaceBase("${Base}/ig.jpeg")} alt="hero" height="1020" width="1528"/>
         <Typography variant="h4" fontWeight="bold" fontSize={50}>My Work</Typography>
         <Stack direction="row" justifyContent="space-around" pt={12} px={10}>
           <Container maxWidth="md">
