@@ -14,17 +14,18 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Stack, Typography } from "@mui/material"
 import ThemeToggle from "./ThemeToggle"
+import { replaceBase } from "@/utils/utils"
  
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Photography",
-    href: "/photography",
+    href: replaceBase("${Base}/photography"),
     description:
       "Section of the website where I showcase my photography skills.",
   },
   {
     title: "Programming",
-    href: "/programming",
+    href: replaceBase("${Base}/programming"),
     description:
       "Section of the website where I showcase my programming skills.",
   },

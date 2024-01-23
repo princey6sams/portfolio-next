@@ -43,8 +43,8 @@ export default function Home() {
         </Stack>
         <Stack direction = "row" spacing={4} alignItems="center">
             {/* // SSR used for custom button */}
-            <CustomButton link="/photography" name="Photography" variant="outline" width="150px"/> 
-            <CustomButton link="/programming" name="Programming" variant="outline" width="150px"/>
+            <CustomButton link={replaceBase("${Base}/photography")} name="Photography" variant="outline" width="150px"/> 
+            <CustomButton link={replaceBase("${Base}/programming")} name="Programming" variant="outline" width="150px"/>
         </Stack>
         <Stack direction="row" spacing={1} pt={3}>
           <IconButton aria-label="GitHub" href="https://github.com/princey6sams">

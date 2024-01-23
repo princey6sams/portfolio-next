@@ -17,7 +17,6 @@ export default function Home() {
   return (
     <main>
       <Stack direction="column" spacing={4} alignItems="center">
-        <h1>Hello, World!</h1>
         <Carousel className="w-full" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: 800, height: 800}} >
             <CarouselPrevious />
             <CarouselContent>
