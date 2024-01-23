@@ -26,7 +26,7 @@ export default function Home() {
             </Stack>
           </Container>
         </Stack>
-        <Image src={replaceBase("${Base}/ig.jpeg")} alt="hero" height="1020" width="1528"/>
+        <Image src={replaceBase("${Base}/ig.jpeg")} alt="hero" height="1020" width="1528" priority/>
         <Typography variant="h4" fontWeight="bold" fontSize={50}>My Work</Typography>
         <Stack direction="row" justifyContent="space-around" pt={12} px={10}>
           <Container maxWidth="md">
