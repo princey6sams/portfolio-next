@@ -17,7 +17,11 @@ const nextConfig = {
     },
     basePath: isProd ? "/portfolio-next" : "",
     distDir: "dist",
-    output: "export",
+    // output: "export",
+    experimental: {
+        // esmExternals: "loose",
+        serverComponentsExternalPackages: ["mongoose"]
+    },
 }
 
 module.exports = nextConfig

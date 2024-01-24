@@ -34,7 +34,9 @@ const components: { title: string; href: string; description: string }[] = [
 const NavBar = () => { //fix font for name
     return (
       <Stack direction="row" justifyContent="space-between" pt={4} px={10}>
-          <Typography variant="h6" fontWeight="bold" fontSize={25}>Prince Authoy Singha</Typography> 
+          <Link href="/" passHref>
+            <Typography variant="h6" fontWeight="bold" fontSize={25}>Prince Authoy Singha</Typography>
+          </Link>
           <Stack direction="row-reverse" spacing={2}>
               <ThemeToggle/>
               <NavigationMenu>

@@ -3,7 +3,7 @@ import CustomButton from "./CustomButton";
 
 export default function IntroBlock() {
     return (
-        <Stack direction="row" justifyContent="space-around" pt={10} px={20}>
+      <Stack direction="row" justifyContent="space-around" pt={10} px={20}>
         <Container maxWidth="md">
           <Typography variant="h4" fontWeight="bold" fontSize={50}>Combining computer engineering and photography for impact.</Typography>
         </Container>
