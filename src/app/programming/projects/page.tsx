@@ -22,3 +22,6 @@ export default function Home() {
     </main>
   )
 }
+
+// Project page to showcase individual projects
+

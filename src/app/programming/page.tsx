@@ -45,3 +45,4 @@ export default function Home() {
 }
 
 // Project card should accept an array of project objects from the db (Also think about adding video link to schema).
+// Paths to images mutated with replaceBase() function

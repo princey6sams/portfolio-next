@@ -22,47 +22,9 @@ const ProjectCard = () => {
         <CarouselItem className={basis}>
             <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
                 <Card className="w-[38rem]">
-                    <CardContent className='p-4'>
-                        <Image src="/DSC_4145-01.jpeg" alt="hero" height="510" width="764"/>
-                    </CardContent>
-                </Card>
-                <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <p>Card Content</p>
-                </CardContent>
-                <CardFooter>
-                    <p>Card Footer</p>
-                </CardFooter>
-            </Card>
-        </CarouselItem>
-        <CarouselItem className={basis}>
-            <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
-                <Card className="w-[38rem]">
                 <CardContent className='p-4'>
                     <Image src="/DSC_3418-01.jpeg" alt="hero" height="510" width="764"/>
                 </CardContent>
-                </Card>
-                <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <p>Card Content</p>
-                </CardContent>
-                <CardFooter>
-                    <p>Card Footer</p>
-                </CardFooter>
-            </Card>
-        </CarouselItem>
-        <CarouselItem className={basis}>
-            <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
-                <Card className="w-[38rem]">
-                <CardContent className='p-4'>
-                    <Image src="/1673305619062-01.jpeg" alt="hero" height="510" width="764"/>
-                </CardContent>``
                 </Card>
                 <CardHeader>
                     <CardTitle>Card Title</CardTitle>
@@ -95,6 +57,44 @@ const ProjectCard = () => {
                 </CardFooter>
             </Card>
         </CarouselItem>
+        <CarouselItem className={basis}>
+            <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
+                <Card className="w-[38rem]">
+                    <CardContent className='p-4'>
+                        <Image src="/DSC_4145-01.jpeg" alt="hero" height="510" width="764"/>
+                    </CardContent>
+                </Card>
+                <CardHeader>
+                    <CardTitle>Card Title</CardTitle>
+                    <CardDescription>Card Description</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <p>Card Content</p>
+                </CardContent>
+                <CardFooter>
+                    <p>Card Footer</p>
+                </CardFooter>
+            </Card>
+        </CarouselItem>
+        <CarouselItem className={basis}>
+            <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
+                <Card className="w-[38rem]">
+                <CardContent className='p-4'>
+                    <Image src="/1673305619062-01.jpeg" alt="hero" height="510" width="764"/>
+                </CardContent>
+                </Card>
+                <CardHeader>
+                    <CardTitle>Card Title</CardTitle>
+                    <CardDescription>Card Description</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <p>Card Content</p>
+                </CardContent>
+                <CardFooter>
+                    <p>Card Footer</p>
+                </CardFooter>
+            </Card>
+        </CarouselItem>
         </CarouselContent>
         <CarouselNext />
     </Carousel>
@@ -103,4 +103,13 @@ const ProjectCard = () => {
 
 export default ProjectCard
 
-//Make a map function that reads the db to get the info to populate the cards
+// Make a map function that reads the db to get the info to populate the cards
+// Use replaceBase to mutate path after mapping
+
+// Project Schema to be used for both the card and the page
+// For the card:
+// Title, Description, Image Path, CreationDate
+
+// Put the click handler on the card itself
+
+// RENAME TO PROJECTCAROUSEL
