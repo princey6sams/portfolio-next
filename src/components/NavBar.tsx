@@ -33,11 +33,11 @@ const components: { title: string; href: string; description: string }[] = [
 
 const NavBar = () => { //fix font for name
     return (
-      <Stack direction="row" justifyContent="space-between" pt={4} px={10}>
+      <Stack direction="row" justifyContent="space-between" pt={4} pb={2} px={10}>
           <Link href="/" passHref>
-            <Typography variant="h6" fontWeight="bold" fontSize={25}>Prince Authoy Singha</Typography>
+            <Typography variant="h6" fontWeight="Bold" fontSize={40} fontFamily='Segoe UI' sx={{ letterSpacing: 2 }} >Princey6sams</Typography>
           </Link>
-          <Stack direction="row-reverse" spacing={2}>
+          <Stack direction="row-reverse" spacing={2} alignItems="center">
               <ThemeToggle/>
               <NavigationMenu>
                   <NavigationMenuList>
