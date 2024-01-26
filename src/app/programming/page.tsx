@@ -18,7 +18,6 @@ import ProjectCard from '@/components/ProjectCard';
 const imgPath = replaceBase("${Base}/ig.png");
 
 export default function Home() {
-  const target = useRef(null);
 
   return (
     <Stack direction="column" spacing={2} alignItems="center">
@@ -40,6 +39,7 @@ export default function Home() {
       <Card className="w-[100rem] h-[800px]" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <ProjectCard /> 
       </Card>
+      <CardFooter></CardFooter>
     </Stack>
   )
 }
