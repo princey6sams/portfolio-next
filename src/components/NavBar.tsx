@@ -33,7 +33,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 const NavBar = () => { //fix font for name
     return (
-      <Stack direction="row" justifyContent="space-between" pt={4} pb={2} px={10}>
+      <Stack direction="row" justifyContent="space-between" pt={4} px={10}>
           <Link href="/" passHref>
             <Typography variant="h6" fontWeight="semi-bold" fontSize={40} sx={{ letterSpacing: 2 }} fontStyle="italic">Princey6sams</Typography>
           </Link>

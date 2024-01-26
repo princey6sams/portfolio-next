@@ -28,7 +28,6 @@ export default function Home() {
         <Image src={replaceBase("${Base}/ig.jpeg")} alt="hero" height="1020" width="1528" priority/>
         <Typography variant="h4" fontWeight="bold" fontSize={50} pt={5}>My Work</Typography>
         <Stack direction="row" justifyContent="space-around" pt={12} px={10}>
-          
           <Container maxWidth="sm">
             <Typography variant="h4" fontSize={20} pb={2}>Creativity</Typography>
             {/* Specify colors for creativity for dark and light modes */}
