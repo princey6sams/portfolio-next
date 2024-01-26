@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <Stack direction="column" spacing={2} alignItems="center">
-      <Stack direction="row" justifyContent="space-around" pt="25rem" px={10} pb={15}>
+      <Stack direction="row" justifyContent="space-around" pt="30rem" px={10} pb={15}>
         <Container maxWidth="sm">
           <Typography variant="h4" fontSize={20} pb={2}>Creativity</Typography>
           {/* Specify colors for creativity for dark and light modes */}
