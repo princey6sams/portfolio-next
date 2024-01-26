@@ -18,11 +18,10 @@ import ProjectCard from '@/components/ProjectCard';
 const imgPath = replaceBase("${Base}/ig.png");
 
 export default function Home() {
-  const target = useRef(null);
 
   return (
     <Stack direction="column" spacing={2} alignItems="center">
-      <Stack direction="row" justifyContent="space-around" pt="25rem" px={10} pb={15}>
+      <Stack direction="row" justifyContent="space-around" pt="30rem" px={10} pb={15}>
         <Container maxWidth="sm">
           <Typography variant="h4" fontSize={20} pb={2}>Creativity</Typography>
           {/* Specify colors for creativity for dark and light modes */}
@@ -40,8 +39,10 @@ export default function Home() {
       <Card className="w-[100rem] h-[800px]" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <ProjectCard /> 
       </Card>
+      <CardFooter></CardFooter>
     </Stack>
   )
 }
 
 // Project card should accept an array of project objects from the db (Also think about adding video link to schema).
+// Paths to images mutated with replaceBase() function
