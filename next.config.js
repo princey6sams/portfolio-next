@@ -17,9 +17,8 @@ const nextConfig = {
     },
     basePath: isProd ? "/portfolio-next" : "",
     distDir: "dist",
-    // output: "export",
+    output: "export", // Uncomment before committing to avoid next build error
     experimental: {
-        // esmExternals: "loose",
         serverComponentsExternalPackages: ["mongoose"]
     },
 }
