@@ -20,11 +20,11 @@ const ProjectCard = () => {
         <CarouselPrevious />
         <CarouselContent>
         <CarouselItem className={basis}>
-            <Card className="w-[40rem] h-[700px]">  
-                <Card style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <CardContent className='p-4'>
-                    <Image src="/DSC_4145-01.jpeg" alt="hero" height="510" width="764"/>
-                </CardContent>
+            <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
+                <Card className="w-[38rem]">
+                    <CardContent className='p-4'>
+                        <Image src="/DSC_4145-01.jpeg" alt="hero" height="510" width="764"/>
+                    </CardContent>
                 </Card>
                 <CardHeader>
                     <CardTitle>Card Title</CardTitle>
@@ -39,8 +39,8 @@ const ProjectCard = () => {
             </Card>
         </CarouselItem>
         <CarouselItem className={basis}>
-            <Card className="w-[40rem] h-[700px]">  
-                <Card style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
+                <Card className="w-[38rem]">
                 <CardContent className='p-4'>
                     <Image src="/DSC_3418-01.jpeg" alt="hero" height="510" width="764"/>
                 </CardContent>
@@ -58,11 +58,11 @@ const ProjectCard = () => {
             </Card>
         </CarouselItem>
         <CarouselItem className={basis}>
-            <Card className="w-[40rem] h-[700px]">  
-                <Card style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
+                <Card className="w-[38rem]">
                 <CardContent className='p-4'>
                     <Image src="/1673305619062-01.jpeg" alt="hero" height="510" width="764"/>
-                </CardContent>
+                </CardContent>``
                 </Card>
                 <CardHeader>
                     <CardTitle>Card Title</CardTitle>
@@ -77,8 +77,8 @@ const ProjectCard = () => {
             </Card>
         </CarouselItem>
         <CarouselItem className={basis}>
-            <Card className="w-[40rem] h-[700px]">  
-                <Card style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Card className="w-[40rem] h-[700px]" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>  
+                <Card className="w-[38rem]">
                 <CardContent className='p-4'>
                     <Image src={imgPath} alt="hero" height="510" width="764"/>
                 </CardContent>
