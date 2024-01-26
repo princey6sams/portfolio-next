@@ -35,7 +35,7 @@ const NavBar = () => { //fix font for name
     return (
       <Stack direction="row" justifyContent="space-between" pt={4} pb={2} px={10}>
           <Link href="/" passHref>
-            <Typography variant="h6" fontWeight="Bold" fontSize={40} fontFamily='Segoe UI' sx={{ letterSpacing: 2 }} >Princey6sams</Typography>
+            <Typography variant="h6" fontWeight="semi-bold" fontSize={40} sx={{ letterSpacing: 2 }} fontStyle="italic">Princey6sams</Typography>
           </Link>
           <Stack direction="row-reverse" spacing={2} alignItems="center">
               <ThemeToggle/>
