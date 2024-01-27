@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MailIcon from '@mui/icons-material/Mail';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { replaceBase } from '@/utils/utils';
-import ProjectCard from '@/components/ProjectCard';
+import ProjectCardCarousel from '@/components/ProjectCardCarousel';
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
         </Stack>
         <Image src={replaceBase("${Base}/ig.jpeg")} alt="hero" height="1020" width="1528" priority/>
         <Typography variant="h4" fontWeight="bold" fontSize={50} py={5}>My Work</Typography>
-          <ProjectCard />
+          <ProjectCardCarousel />
         <Stack direction="row" justifyContent="space-around" pt={12} px={10}>
           <Container maxWidth="sm">
             <Typography variant="h4" fontSize={20} pb={2}>Creativity</Typography>
