@@ -36,7 +36,7 @@ export default function Home() {
           </Stack>
         </Container>
       </Stack>
-      <Card className="w-[100rem] h-[800px]" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+      <Card className="w-[90rem] h-[800px]" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <ProjectCard /> 
       </Card>
       <CardFooter></CardFooter>
@@ -45,4 +45,4 @@ export default function Home() {
 }
 
 // Project card should accept an array of project objects from the db (Also think about adding video link to schema).
-// Paths to images mutated with replaceBase() function
+// Paths to images mutated with replaceBase() function - Done

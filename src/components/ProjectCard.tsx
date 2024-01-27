@@ -11,9 +11,11 @@ import {
 import { Carousel, CarouselPrevious, CarouselContent, CarouselItem, CarouselNext } from './ui/carousel';
 import { replaceBase } from '@/utils/utils'
 import { Stack, Typography } from '@mui/material';
+import Autoplay from "embla-carousel-autoplay"
+
 
 const imgPath = replaceBase("${Base}/ig.jpeg");
-const basis = "md:basis-1 lg:basis-1/2"
+const basis = "lg:basis-1/2"
 
 interface Project {
     title: string;
@@ -71,7 +73,12 @@ const ProjectBuilder = (project: Project) => (
 
 const ProjectCard = () => {
   return (
-    <Carousel style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: "90rem", height: "40rem"}} >
+    <Carousel style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: "90rem", height: "40rem"}} 
+    plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}>
         <CarouselPrevious />
         <CarouselContent>
            {projects.map((project, index) => (
