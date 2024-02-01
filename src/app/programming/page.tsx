@@ -12,7 +12,6 @@ import { replaceBase } from '@/utils/utils'
 import CustomButton from '@/components/CustomButton';
 import ProjectCardCarousel from '@/components/ProjectCardCarousel';
 import projects from "@/db/fake/Projects"
-import { Project } from "@/db/models/Project"
 import ProjectCard from "@/components/ProjectCard"
 
 const imgPath = replaceBase("${Base}/ig.png");
