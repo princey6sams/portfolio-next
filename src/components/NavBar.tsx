@@ -12,10 +12,16 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { Stack, Typography } from "@mui/material"
+import { Stack, ThemeProvider, Typography, createTheme } from "@mui/material"
 import ThemeToggle from "./ThemeToggle"
 import { replaceBase } from "@/utils/utils"
- 
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
+
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Photography",
@@ -31,11 +37,27 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ]
 
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Montserrat, sans-serif',
+  },
+});
+
+const CustomTypography = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <Typography variant="h1">
+        Montserrat Font in Typography Component
+      </Typography>
+    </ThemeProvider>
+  );
+};
+
 const NavBar = () => { //fix font for name
     return (
       <Stack direction="row" justifyContent="space-between" pt={4} px={10}>
           <Link href="/" passHref>
-            <Typography variant="h6" fontWeight="semi-bold" fontSize={40} sx={{ letterSpacing: 2 }} fontStyle="italic">Princey6sams</Typography>
+            <Typography variant="h6" fontFamily="Montserrat, sans-serif" fontWeight="semi-bold" fontSize={40} sx={{ letterSpacing: 2 }}>Princey6sams</Typography>
           </Link>
           <Stack direction="row-reverse" spacing={2} alignItems="center">
               <ThemeToggle/>
