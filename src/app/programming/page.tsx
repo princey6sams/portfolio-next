@@ -29,14 +29,14 @@ export default function Home() {
         <Container maxWidth="md">
           <Typography variant="h6">Welcome to my portfolio website, where I showcase my unique blend of computer engineering and photography. Explore my work and projects to see how I bring creativity and technical expertise together.</Typography>
           <Stack direction="row" spacing={4} pt={4}>
-            <CustomButton link="/programming/projects" name="Explore" variant="default" width="150px" scrollTarget="all-projects" />
+            <CustomButton link="all-projects" name="Explore" variant="default" width="150px" />
             {/* How to make it scroll to another section of the same page */}
             <CustomButton link="/contact" name="Contact" variant="outline" width="150px"/>
           </Stack>
         </Container>
       </Stack>
       <Card className="w-[100rem] h-[800px]" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <ProjectCardCarousel /> 
+          <ProjectCardCarousel id="all-projects"/> 
       </Card>
       <CardFooter></CardFooter>
       <Container maxWidth="sm">

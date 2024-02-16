@@ -9,6 +9,11 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import { replaceBase } from '@/utils/utils';
 import ProjectCardCarousel from '@/components/ProjectCardCarousel';
 
+const iconButtonStyle = {
+  backgroundColor: 'slate',
+  color: 'slate',
+};
+
 export default function Home() {
   return (
     <main>
@@ -21,15 +26,15 @@ export default function Home() {
             <Typography variant="h6" fontSize={18} pb={2}>Welcome to my portfolio website! I am a computer engineering student with a passion for photography. This website is where I showcase my unique blend of computer engineering and photography.</Typography>
             <Typography variant="h6" fontSize={18}>Explore my work and projects to see how I bring creativity and technical expertise together.</Typography>
             <Stack direction="row" spacing={4} pt={2}>
-              <CustomButton link="/about" name="Explore" variant="default" width="150px"/>
+              <CustomButton link="all-projects" name="Explore" variant="default" width="150px" />
               {/* How to make it scroll to another section of the same page */}
               <CustomButton link="/contact" name="Contact" variant="outline" width="150px"/>
             </Stack>
           </Container>
         </Stack>
         <Image src={replaceBase("${Base}/ig.jpeg")} alt="hero" height="1020" width="1528" priority/>
-        <Typography variant="h4" fontWeight="bold" fontSize={50} py={5}>My Work</Typography>
-          <ProjectCardCarousel />
+        <Typography variant="h4" fontWeight="bold" fontSize={50} py={5} id="all-projects">My Work</Typography>
+          <ProjectCardCarousel id="carousel"/>
         <Stack direction="row" justifyContent="space-around" pt={12} px={10}>
           <Container maxWidth="sm">
             <Typography variant="h4" fontSize={20} pb={2}>Creativity</Typography>
@@ -52,21 +57,21 @@ export default function Home() {
         </Stack>
         <Stack direction="row" spacing={1} pt={3}>
           <IconButton aria-label="GitHub" href="https://github.com/princey6sams">
-            <Avatar alt="GitHub">
+            <Avatar alt="GitHub" style={iconButtonStyle}>
               <GitHubIcon/>
             </Avatar>
           </IconButton>
-          <IconButton aria-label="Instagram" href="https://www.instagram.com/princey6sams">
+          <IconButton aria-label="Instagram" href="https://www.instagram.com/princey6sams" style={iconButtonStyle}>
             <Avatar alt="Instagram">
               <InstagramIcon/>
             </Avatar>
           </IconButton>
-            <IconButton aria-label="Email" href="mailto:princeasingha@gmail.com">
+            <IconButton aria-label="Email" href="mailto:princeasingha@gmail.com" style={iconButtonStyle}>
             <Avatar alt="Email">
               <MailIcon/>
             </Avatar>
           </IconButton>
-          <IconButton aria-label="YouTube" href="https://www.youtube.com/channel/UC9xswhHMEd2q-X7iEgNzwGw">
+          <IconButton aria-label="YouTube" href="https://www.youtube.com/channel/UC9xswhHMEd2q-X7iEgNzwGw" style={iconButtonStyle}>
             <Avatar alt="YouTube">
               <YouTubeIcon/>
             </Avatar>
