@@ -12,8 +12,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Stack, ThemeProvider, Typography, createTheme } from "@mui/material";
-import ThemeToggle from "./ThemeToggle";
+import { Stack, Typography } from "@mui/material";
+import { ThemeToggle } from "./ThemeToggle";
 import { replaceBase } from "@/utils/utils";
 import { Montserrat } from "next/font/google";
 import "../app/globals.css";

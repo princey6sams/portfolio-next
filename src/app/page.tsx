@@ -23,7 +23,7 @@ const iconButtonStyle = {
 export default function Home() {
   return (
     <main>
-      <Stack direction="column" spacing={4} alignItems="center" p={10}>
+      <Stack direction="column" spacing={4} alignItems="center" p={10} pt={50}>
         <Stack
           direction={{ sm: "column", md: "row" }}
           justifyContent="space-around"
