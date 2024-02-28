@@ -1,6 +1,6 @@
 # Portfolio Website for Prince Authoy Singha.
 
-A custom-made portfolio website to showcase my unique blend of creativity stemming from Photography and Programming using photos and projects respectively. This had to be custom made to attempt to properly convey my passion for both and have it look exactly how I want it to. In addition, this website also acts as a showcase for my skills as a full-stack web developer.
+A custom-made portfolio website to showcase my unique blend of creativity stemming from Photography and Programming using photos and coding projects respectively. This had to be custom made in an attempt to properly convey my passion for both and have it look exactly how I want it to. In addition, this website also acts as a showcase for my skills as a full-stack web developer. 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
