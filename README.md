@@ -5,6 +5,7 @@ A custom-made portfolio website to showcase my unique blend of creativity stemmi
 Check it out here:
 [portfolio](https://princey6sams.github.io/portfolio-next/)
 
+### Build instructions as follows:
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
