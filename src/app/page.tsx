@@ -137,3 +137,5 @@ export default function Home() {
     </main>
   );
 }
+
+// Get ready to test integration to Mongo and use it to store data about your projects and photography
